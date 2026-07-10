@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
-body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f7fa}
-.w{max-width:600px;margin:0 auto;background:#fff}
-img{display:block;border:0}
-.bar{height:4px;background:linear-gradient(90deg,#06b6d4,#3b82f6,#ec4899)}
-.hd{padding:48px 40px 32px;text-align:center}
-.hd .pill{display:inline-block;background:#e0f2fe;color:#0369a1;font-size:12px;font-weight:700;padding:6px 16px;border-radius:50px;margin-bottom:20px;letter-spacing:0.5px}
-.hd h1{font-size:34px;color:#0f172a;margin:0;font-weight:800;line-height:1.15;letter-spacing:-1px}
-.hd p{font-size:16px;color:#64748b;margin:14px 0 0;line-height:1.6;max-width:400px;margin-left:auto;margin-right:auto}
-.grid{display:flex;flex-wrap:wrap;gap:12px;padding:0 40px 40px}
-.gc{flex:1 1 calc(50% - 12px);background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:28px 20px;text-align:center;min-width:140px}
-.gc .emoji{font-size:36px;display:block;margin-bottom:12px}
-.gc h3{font-size:15px;color:#0f172a;margin:0 0 4px;font-weight:700}
-.gc p{font-size:13px;color:#94a3b8;margin:0}
-.test{padding:0 40px 40px}
-.test .box{background:#f8fafc;border-radius:14px;padding:28px 24px;text-align:center}
-.test .box q{font-size:16px;color:#475569;line-height:1.7;font-style:italic;quotes:none}
-.test .box .by{font-size:13px;color:#06b6d4;margin-top:12px;font-weight:700}
-.cta-wrap{padding:0 40px 48px;text-align:center}
-.cta-wrap .btn{display:inline-block;background:#0f172a;color:#fff;text-decoration:none;padding:18px 44px;border-radius:50px;font-size:16px;font-weight:700;letter-spacing:-0.2px}
-.cta-wrap .note{font-size:12px;color:#94a3b8;margin-top:10px}
-.ft{padding:20px 40px 40px;text-align:center;font-size:11px;color:#94a3b8;line-height:1.8}
-.ft a{color:#06b6d4}
+body{margin:0;padding:0;background:#fafafa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+.w{max-width:560px;margin:0 auto;background:#fff}
+img{display:block;border:0;max-width:100%}
+.dot{width:8px;height:8px;background:#2563eb;margin:0 auto 32px}
+.hd{padding:56px 44px 36px;text-align:center}
+.hd .pill{display:inline-block;font-size:11px;color:#2563eb;font-weight:600;background:#eff6ff;padding:5px 16px;border-radius:50px;margin-bottom:20px;letter-spacing:0.3px}
+.hd h1{font-size:28px;color:#111;margin:0;font-weight:700;line-height:1.2;letter-spacing:-0.5px}
+.hd .dek{font-size:15px;color:#666;margin:12px 0 0;line-height:1.6;max-width:360px;margin-left:auto;margin-right:auto}
+.feature{padding:0 44px 28px}
+.feature img{width:100%;max-height:220px;object-fit:cover;border-radius:2px}
+.feature .meta{padding:16px 0 0}
+.feature .meta h3{font-size:18px;color:#111;margin:0 0 4px;font-weight:700}
+.feature .meta p{font-size:13px;color:#666;margin:0;line-height:1.6}
+.grid{padding:0 44px 36px;display:flex;gap:16px}
+.gc{flex:1}
+.gc img{width:100%;height:120px;object-fit:cover;border-radius:2px;margin-bottom:10px}
+.gc h4{font-size:13px;color:#111;margin:0 0 2px;font-weight:600}
+.gc p{font-size:12px;color:#888;margin:0}
+.ft{padding:24px 44px 44px;text-align:center;font-size:11px;color:#aaa;line-height:2;border-top:1px solid #eee}
+.ft a{color:#2563eb}
 </style></head>
-<body style="margin:0;padding:40px 16px">
-<div class="w" style="border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.04)">
-<img src="/images/email-startup-hero.jpg" alt="" style="width:100%;max-height:180px;object-fit:cover">
-<div class="bar"></div>
-<div class="hd"><div class="pill">🎉 PRODUCT UPDATE</div><h1>We Just Shipped Something Big</h1><p>Version 3.0 is live — and it's the most powerful release we've ever built.</p></div>
-<div class="grid"><div class="gc"><span class="emoji">📊</span><h3>Analytics 2.0</h3><p>Real-time dashboards</p></div><div class="gc"><span class="emoji">🤖</span><h3>AI Copilot</h3><p>Smart suggestions</p></div><div class="gc"><span class="emoji">🔗</span><h3>50+ Integrations</h3><p>Connect everything</p></div><div class="gc"><span class="emoji">⚡</span><h3>2x Performance</h3><p>Blazing fast</p></div></div>
-<div class="test"><div class="box"><q>"Version 3.0 transformed our workflow overnight. We're shipping 3x faster."</q><div class="by">— Sarah Chen, CTO at ScaleAI</div></div></div>
-<div class="cta-wrap"><a href="#" class="btn">Try Version 3.0 Free →</a><p class="note">No credit card · 14-day trial · Cancel anytime</p></div>
-<img src="/images/email-startup-footer.jpg" alt="" style="width:100%;max-height:50px;object-fit:cover">
-<div class="ft"><p>© 2026 MojoRenders · <a href="#">Unsubscribe</a> · <a href="#">Privacy</a></p></div>
+<body style="margin:0;padding:50px 16px">
+<div class="w" style="box-shadow:0 0 0 1px rgba(0,0,0,0.04)">
+<div class="hd"><div class="pill">Product Update</div><h1>Introducing collaborative canvases</h1><p class="dek">Real-time multiplayer. Infinite zoom. The whiteboard reimagined.</p></div>
+<div class="dot"></div>
+<div class="feature"><img src="/images/email-startup-hero.jpg" alt=""><div class="meta"><h3>A canvas that thinks with you</h3><p>Drag in files, sketch ideas, and watch your team's cursor move in real time. No plugins. No setup. Just create.</p></div></div>
+<div class="grid"><div class="gc"><img src="/images/email-minimalist-hero.jpg" alt=""><h4>Live cursors</h4><p>See who's working where</p></div><div class="gc"><img src="/images/email-startup-footer.jpg" alt=""><h4>Infinite canvas</h4><p>No edges, no limits</p></div></div>
+<div style="text-align:center;padding:0 44px 44px"><a href="#" style="display:inline-block;background:#111;color:#fff;text-decoration:none;padding:15px 40px;font-size:14px;font-weight:600;letter-spacing:-0.2px">Try it free →</a></div>
+<div class="ft"><p>MojoRenders · <a href="#">Unsubscribe</a> · <a href="#">View Online</a></p></div>
 </div></body></html>
