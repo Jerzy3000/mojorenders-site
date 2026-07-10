@@ -1,5 +1,11 @@
 {
   "rewrites": [
+    { "source": "/services/email-templates/minimalist", "destination": "/services/email-templates/minimalist.html" },
+    { "source": "/services/email-templates/bold-dark", "destination": "/services/email-templates/bold-dark.html" },
+    { "source": "/services/email-templates/luxury", "destination": "/services/email-templates/luxury.html" },
+    { "source": "/services/email-templates/tech-startup", "destination": "/services/email-templates/tech-startup.html" },
+    { "source": "/services/email-templates/corporate", "destination": "/services/email-templates/corporate.html" },
+    { "source": "/services/email-templates/creative", "destination": "/services/email-templates/creative.html" },
     { "source": "/services/email-templates", "destination": "/services/email-templates.html" },
     { "source": "/((?!images/).*)", "destination": "/index.html" }
   ]
