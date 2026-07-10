@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<style>body{margin:0;padding:0;font-family:-apple-system,'Inter',sans-serif;background:#f8fafc}.wrapper{max-width:600px;margin:0 auto;background:#fff}.top-bar{background:linear-gradient(135deg,#06b6d4,#3b82f6);padding:6px 0}.header{padding:40px 30px 30px;text-align:center}.header h1{font-size:26px;color:#0f172a;margin:0;font-weight:800}.header p{color:#64748b;font-size:14px;margin:8px 0 0;line-height:1.5}.shapes{position:relative;height:6px;background:repeating-linear-gradient(90deg,#06b6d4 0px,#06b6d4 40px,#3b82f6 40px,#3b82f6 80px,#ec4899 80px,#ec4899 120px)}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:30px}.f-card{background:#f8fafc;border-radius:16px;padding:24px 20px;text-align:center;border:1px solid #e2e8f0}.f-card .emoji{font-size:36px;display:block;margin-bottom:10px}.f-card h3{font-size:14px;color:#0f172a;margin:0 0 4px;font-weight:700}.f-card p{font-size:12px;color:#94a3b8;margin:0}.btn{display:inline-block;background:#0f172a;color:#fff!important;text-decoration:none;padding:14px 40px;border-radius:50px;font-size:15px;font-weight:700;margin:10px 0}.cta{text-align:center;padding:0 30px 40px}.testimonial{padding:30px;background:#f1f5f9;margin:0 20px 30px;border-radius:16px;text-align:center}.testimonial p{font-size:14px;color:#475569;line-height:1.6;margin:0;font-style:italic}.testimonial .name{font-size:13px;color:#06b6d4;margin-top:10px;font-style:normal;font-weight:600}.footer{padding:24px 30px;text-align:center;font-size:12px;color:#94a3b8}.footer a{color:#06b6d4;text-decoration:none}</style></head>
-<body style="margin:0;padding:40px 16px;background:#f1f5f9">
-<div class="wrapper">
-<img src="/images/email-startup-hero.jpg" alt="" style="width:100%;max-height:200px;object-fit:cover;display:block"> style="border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.05)">
-<div class="top-bar"></div>
-<div class="header"><p style="font-size:11px;color:#06b6d4;text-transform:uppercase;letter-spacing:2px;font-weight:700">Product Update</p><h1>We Just Shipped<br>Something Big 🎉</h1><p>Version 3.0 is here — and it's our biggest update yet.</p></div>
-<div class="shapes"></div>
-<div class="feature-grid"><div class="f-card"><span class="emoji">📊</span><h3>Analytics 2.0</h3><p>Real-time insights</p></div><div class="f-card"><span class="emoji">🤖</span><h3>AI Assistant</h3><p>Smart suggestions</p></div><div class="f-card"><span class="emoji">🔗</span><h3>Integrations</h3><p>50+ new apps</p></div><div class="f-card"><span class="emoji">⚡</span><h3>2x Faster</h3><p>Infrastructure upgrade</p></div></div>
-<div class="testimonial"><p>"The new version completely transformed our workflow. We're seeing 3x productivity gains across the team."</p><p class="name">— Sarah Chen, CTO at ScaleAI</p></div>
-<div class="cta"><a href="#" class="btn">Try Version 3.0 Free →</a><p style="font-size:12px;color:#94a3b8;margin-top:8px">No credit card required · 14-day trial</p></div>
-<div class="footer"><p>© 2026 ProductName · <a href="#">Unsubscribe</a> · <a href="#">Privacy</a></p></div>
-</div><img src="/images/email-startup-footer.jpg" alt="" style="width:100%;max-height:60px;object-fit:cover;display:block;margin-top:24px">
-</body></html>
+<style>
+body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f7fa}
+.w{max-width:600px;margin:0 auto;background:#fff}
+img{display:block;border:0}
+.bar{height:4px;background:linear-gradient(90deg,#06b6d4,#3b82f6,#ec4899)}
+.hd{padding:48px 40px 32px;text-align:center}
+.hd .pill{display:inline-block;background:#e0f2fe;color:#0369a1;font-size:12px;font-weight:700;padding:6px 16px;border-radius:50px;margin-bottom:20px;letter-spacing:0.5px}
+.hd h1{font-size:34px;color:#0f172a;margin:0;font-weight:800;line-height:1.15;letter-spacing:-1px}
+.hd p{font-size:16px;color:#64748b;margin:14px 0 0;line-height:1.6;max-width:400px;margin-left:auto;margin-right:auto}
+.grid{display:flex;flex-wrap:wrap;gap:12px;padding:0 40px 40px}
+.gc{flex:1 1 calc(50% - 12px);background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:28px 20px;text-align:center;min-width:140px}
+.gc .emoji{font-size:36px;display:block;margin-bottom:12px}
+.gc h3{font-size:15px;color:#0f172a;margin:0 0 4px;font-weight:700}
+.gc p{font-size:13px;color:#94a3b8;margin:0}
+.test{padding:0 40px 40px}
+.test .box{background:#f8fafc;border-radius:14px;padding:28px 24px;text-align:center}
+.test .box q{font-size:16px;color:#475569;line-height:1.7;font-style:italic;quotes:none}
+.test .box .by{font-size:13px;color:#06b6d4;margin-top:12px;font-weight:700}
+.cta-wrap{padding:0 40px 48px;text-align:center}
+.cta-wrap .btn{display:inline-block;background:#0f172a;color:#fff;text-decoration:none;padding:18px 44px;border-radius:50px;font-size:16px;font-weight:700;letter-spacing:-0.2px}
+.cta-wrap .note{font-size:12px;color:#94a3b8;margin-top:10px}
+.ft{padding:20px 40px 40px;text-align:center;font-size:11px;color:#94a3b8;line-height:1.8}
+.ft a{color:#06b6d4}
+</style></head>
+<body style="margin:0;padding:40px 16px">
+<div class="w" style="border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.04)">
+<img src="/images/email-startup-hero.jpg" alt="" style="width:100%;max-height:180px;object-fit:cover">
+<div class="bar"></div>
+<div class="hd"><div class="pill">🎉 PRODUCT UPDATE</div><h1>We Just Shipped Something Big</h1><p>Version 3.0 is live — and it's the most powerful release we've ever built.</p></div>
+<div class="grid"><div class="gc"><span class="emoji">📊</span><h3>Analytics 2.0</h3><p>Real-time dashboards</p></div><div class="gc"><span class="emoji">🤖</span><h3>AI Copilot</h3><p>Smart suggestions</p></div><div class="gc"><span class="emoji">🔗</span><h3>50+ Integrations</h3><p>Connect everything</p></div><div class="gc"><span class="emoji">⚡</span><h3>2x Performance</h3><p>Blazing fast</p></div></div>
+<div class="test"><div class="box"><q>"Version 3.0 transformed our workflow overnight. We're shipping 3x faster."</q><div class="by">— Sarah Chen, CTO at ScaleAI</div></div></div>
+<div class="cta-wrap"><a href="#" class="btn">Try Version 3.0 Free →</a><p class="note">No credit card · 14-day trial · Cancel anytime</p></div>
+<img src="/images/email-startup-footer.jpg" alt="" style="width:100%;max-height:50px;object-fit:cover">
+<div class="ft"><p>© 2026 MojoRenders · <a href="#">Unsubscribe</a> · <a href="#">Privacy</a></p></div>
+</div></body></html>
