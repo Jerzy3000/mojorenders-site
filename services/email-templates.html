@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Templates — MojoRenders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{fontFamily:{display:['Space Grotesk','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+    <style>
+        body{font-family:'Inter',sans-serif}
+        .gradient-text{background:linear-gradient(135deg,#3B82F6,#A855F7,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .card-hover{transition:all 0.3s ease}
+        .card-hover:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(168,85,247,0.15)}
+    </style>
+</head>
+<body class="bg-[#0A0A14] text-gray-200 font-body">
+
+    <nav class="fixed top-0 w-full z-50 bg-[#0A0A14]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="font-display text-xl font-bold tracking-tight">Mojo<span class="text-[#3B82F6]">Renders</span></a>
+            <a href="/" class="text-sm text-gray-400 hover:text-[#A855F7] transition"><i class="fas fa-arrow-left mr-1.5"></i> Back to Home</a>
+        </div>
+    </nav>
+
+    <section class="pt-28 pb-24 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <p class="text-[#EC4899] font-semibold text-sm tracking-widest uppercase mb-3">Email Templates</p>
+            <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">Designed for <span class="gradient-text">Every Inbox</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">Six distinct styles. Each one responsive, polished, and ready to customize for your brand. Every template includes mobile optimization, dark mode support, and cross-client compatibility.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card-hover bg-[#12121F] border border-white/5 rounded-2xl overflow-hidden">
+                <img src="images/email-minimalist.jpg" alt="Minimalist Clean" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-[#3B82F6] font-semibold uppercase tracking-wider">Style 01</span>
+                    <h3 class="font-display text-xl font-bold mt-1.5 mb-2">Minimalist Clean</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">White space, elegant typography, subtle blue accents. Perfect for boutique brands, consultants, and lifestyle businesses.</p>
+                </div>
+            </div>
+            <div class="card-hover bg-[#12121F] border border-white/5 rounded-2xl overflow-hidden">
+                <img src="images/email-bold-dark.jpg" alt="Bold Dark" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-[#A855F7] font-semibold uppercase tracking-wider">Style 02</span>
+                    <h3 class="font-display text-xl font-bold mt-1.5 mb-2">Bold Dark</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Vibrant gradients, dark backgrounds, neon accents. Built for tech brands, gaming, and creators who want to stand out.</p>
+                </div>
+            </div>
+            <div class="card-hover bg-[#12121F] border border-white/5 rounded-2xl overflow-hidden">
+                <img src="images/email-luxury.jpg" alt="Luxury & Elegance" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Style 03</span>
+                    <h3 class="font-display text-xl font-bold mt-1.5 mb-2">Luxury & Elegance</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Warm beige, gold accents, serif typography. Made for high-end brands, fashion, jewelry, and premium real estate.</p>
+                </div>
+            </div>
+            <div class="card-hover bg-[#12121F] border border-white/5 rounded-2xl overflow-hidden">
+                <img src="images/email-tech-startup.jpg" alt="Tech Startup" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Style 04</span>
+                    <h3 class="font-display text-xl font-bold mt-1.5 mb-2">Tech Startup</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Geometric shapes, cyan and coral gradients, card-based layouts. Ideal for SaaS, startups, and product launches.</p>
+                </div>
+            </div>
+            <div class="card-hover bg-[#12121F] border border-white/5 rounded-2xl overflow-hidden">
+                <img src="images/email-corporate.jpg" alt="Corporate Professional" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-blue-300 font-semibold uppercase tracking-wider">Style 05</span>
+                    <h3 class="font-display text-xl font-bold mt-1.5 mb-2">Corporate Professional</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Structured grids, navy and white palette, gold accent lines. Trusted by finance, legal, and enterprise clients.</p>
+                </div>
+            </div>
+            <div class="card-hover bg-[#12121F] border border-white/5 rounded-2xl overflow-hidden">
+                <img src="images/email-creative.jpg" alt="Creative & Bold" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-[#EC4899] font-semibold uppercase tracking-wider">Style 06</span>
+                    <h3 class="font-display text-xl font-bold mt-1.5 mb-2">Creative & Bold</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Split color blocks, artistic asymmetry, magazine-style layouts. For agencies, artists, and brands that break the mold.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 text-center bg-[#12121F] border border-white/5 rounded-3xl p-12">
+            <h2 class="font-display text-3xl font-bold mb-4">Every Template Includes</h2>
+            <div class="grid md:grid-cols-3 gap-6 mt-8 text-left max-w-3xl mx-auto">
+                <div><i class="fas fa-mobile-alt text-[#3B82F6] text-xl mb-2"></i><p class="text-sm text-gray-400">Fully responsive on all devices and email clients</p></div>
+                <div><i class="fas fa-moon text-[#A855F7] text-xl mb-2"></i><p class="text-sm text-gray-400">Dark mode ready with automatic color adaptation</p></div>
+                <div><i class="fas fa-paint-brush text-[#EC4899] text-xl mb-2"></i><p class="text-sm text-gray-400">Fully customizable — colors, fonts, images, content</p></div>
+                <div><i class="fas fa-bolt text-amber-400 text-xl mb-2"></i><p class="text-sm text-gray-400">Optimized for fast loading and high deliverability</p></div>
+                <div><i class="fas fa-code text-green-400 text-xl mb-2"></i><p class="text-sm text-gray-400">Clean HTML/CSS — easy to integrate with any platform</p></div>
+                <div><i class="fas fa-infinity text-cyan-400 text-xl mb-2"></i><p class="text-sm text-gray-400">Unlimited revisions until it's exactly right</p></div>
+            </div>
+            <a href="/#contact" class="mt-10 inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#3B82F6] to-[#A855F7] rounded-xl font-bold hover:shadow-lg transition">
+                Order Your Custom Templates <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-[#0A0A14] border-t border-white/5 text-center text-sm text-gray-600">
+        <p>&copy; 2026 MojoRenders. All rights reserved. | <a href="/" class="hover:text-[#A855F7]">Home</a></p>
+    </footer>
+</body>
+</html>
