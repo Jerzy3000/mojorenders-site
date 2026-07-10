@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/services/email-templates", "destination": "/services/email-templates.html" },
+    { "source": "/((?!images/).*)", "destination": "/index.html" }
+  ]
 }
