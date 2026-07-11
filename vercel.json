@@ -7,6 +7,7 @@
     { "source": "/services/email-templates/corporate", "destination": "/services/email-templates/corporate.html" },
     { "source": "/services/email-templates/creative", "destination": "/services/email-templates/creative.html" },
     { "source": "/services/email-templates", "destination": "/services/email-templates.html" },
+    { "source": "/archvivo-vizma", "destination": "/archvivo-vizma.html" },
     { "source": "/((?!images/).*)", "destination": "/index.html" }
   ]
 }

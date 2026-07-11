@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArchViVo × Vizma Design</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.03em; }
+    .vizma-bg { background: linear-gradient(135deg, #1e3a5f, #2E5B8C); }
+    .archvivo-bg { background: linear-gradient(135deg, #3a2a1f, #F0A83C); }
+    .section-label { font-size: 10px; letter-spacing: 2px; font-weight: 600; color: #666; }
+    .customer-card { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; }
+    .customer-card:hover { transform: translateY(-4px); }
+    .customer-card.vizma { border-color: #10b981; }
+    .customer-card.archvivo { border-color: #f59e0b; }
+    .copy-btn { transition: all 0.1s; }
+</style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- Navbar -->
+    <nav class="border-b border-white/10 bg-zinc-950/80 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-8 flex items-center justify-between h-20">
+            <div class="flex items-center gap-x-3">
+                <div class="flex items-center gap-x-2">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center"><span class="text-zinc-950 font-bold text-xl">A</span></div>
+                    <span class="font-semibold text-2xl tracking-tight">ArchViVo</span>
+                </div>
+                <div class="text-white/40">×</div>
+                <div><span class="font-semibold text-2xl tracking-tight text-[#2E5B8C]">Vizma</span></div>
+            </div>
+            <div class="flex items-center gap-x-8 text-sm font-medium">
+                <a href="#matrix" class="hover:text-white/70 transition-colors">Matrix</a>
+                <a href="#customers" class="hover:text-white/70 transition-colors">Customers</a>
+                <a href="#workflow" class="hover:text-white/70 transition-colors">Workflow</a>
+                <a href="#usecases" class="hover:text-white/70 transition-colors">Use Cases</a>
+                <a href="#decision" class="hover:text-white/70 transition-colors">Decision Helper</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-5xl mx-auto px-8 pt-20 pb-16 text-center">
+        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-2xl bg-white/5 text-xs font-medium tracking-[1px] mb-6">SALES ENABLEMENT • JULY 2026</div>
+        <h1 class="text-7xl font-semibold tracking-[-4px] heading">Two platforms.<br>One complete solution.</h1>
+        <p class="mt-6 max-w-md mx-auto text-2xl text-white/60">Vizma Design is the visualization engine.<br>ArchViVo is the full team that turns it into market-ready sales systems.</p>
+    </div>
+
+    <!-- Platform Cards -->
+    <div class="max-w-6xl mx-auto px-8 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="vizma-bg rounded-3xl p-10">
+                <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-8"><span class="text-4xl">⚡</span></div>
+                <div class="text-5xl font-semibold tracking-tight">Vizma Design</div>
+                <div class="text-2xl text-white/70 mt-2">The Visualization Engine</div>
+                <div class="mt-8 space-y-3 text-lg">
+                    <div>• AI-powered architectural visualization platform</div>
+                    <div>• Built for architects &amp; in-house teams</div>
+                    <div>• Blacklines → Renders + iterations in minutes</div>
+                    <div>• You control the process</div>
+                </div>
+                <div class="mt-10 inline-block px-5 py-2 rounded-full bg-white/20 text-sm">Choose when you want speed + control</div>
+            </div>
+            <div class="archvivo-bg rounded-3xl p-10">
+                <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-8"><span class="text-4xl">🏛️</span></div>
+                <div class="text-5xl font-semibold tracking-tight">ArchViVo</div>
+                <div class="text-2xl text-white/70 mt-2">The Complete Sales System</div>
+                <div class="mt-8 space-y-3 text-lg">
+                    <div>• Full pre-construction visualization + marketing service</div>
+                    <div>• Built for developers, brokers &amp; owners</div>
+                    <div>• Renders + websites + presentations + campaigns</div>
+                    <div>• One team handles everything end-to-end</div>
+                </div>
+                <div class="mt-10 inline-block px-5 py-2 rounded-full bg-white/20 text-sm">Choose when you want the full package</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Matrix -->
+    <div id="matrix" class="max-w-6xl mx-auto px-8 pb-20">
+        <div class="section-label mb-4 flex items-center justify-between">
+            <span>QUICK REFERENCE MATRIX</span>
+            <button onclick="copyMatrixLine()" class="copy-btn px-3 py-1 text-xs border border-white/20 rounded-lg hover:bg-white/5">Copy Key Line</button>
+        </div>
+        <div class="bg-white text-zinc-950 rounded-3xl overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-10 border-b md:border-b-0 md:border-r">
+                    <div class="text-3xl font-semibold text-[#2E5B8C]">Vizma Design</div>
+                    <div class="text-[#2E5B8C]/70">AI Visualization Platform</div>
+                </div>
+                <div class="p-10">
+                    <div class="text-3xl font-semibold">ArchViVo</div>
+                    <div class="text-black/60">Full Sales &amp; Marketing Service</div>
+                </div>
+            </div>
+            <div class="px-10 pb-10 text-[15px]">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10">
+                    <div><strong class="block mb-1 text-sm text-zinc-500">What it is</strong>AI architectural visualization platform</div>
+                    <div><strong class="block mb-1 text-sm text-zinc-500">Who it’s for</strong>Architects, designers, and teams with internal staff</div>
+                    <div><strong class="block mb-1 text-sm text-zinc-500">What you get</strong>Renders, iterations, motion-ready assets</div>
+                </div>
+            </div>
+            <div class="bg-zinc-950 text-white p-6 text-center text-sm">
+                <strong>Vizma</strong> = The visualization engine &nbsp;&nbsp;•&nbsp;&nbsp; <strong>ArchViVo</strong> = The complete team-managed solution
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Types -->
+    <div id="customers" class="max-w-6xl mx-auto px-8 pb-20">
+        <div class="section-label mb-4">CUSTOMER TYPE DECISION CARDS <span class="text-white/40">(Click to highlight recommendation)</span></div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="customer-cards">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- Workflow -->
+    <div id="workflow" class="max-w-5xl mx-auto px-8 pb-20">
+        <div class="section-label mb-4">WORKFLOW</div>
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div><div class="mx-auto w-12 h-12 flex items-center justify-center border border-white/30 rounded-2xl text-xl font-semibold mb-4">1</div><div class="font-semibold">Source Files</div></div>
+                <div><div class="mx-auto w-12 h-12 flex items-center justify-center border border-[#2E5B8C] bg-[#2E5B8C] rounded-2xl text-xl font-semibold mb-4 text-white">2</div><div class="font-semibold">Vizma Design</div></div>
+                <div><div class="mx-auto w-12 h-12 flex items-center justify-center border border-white/30 rounded-2xl text-xl font-semibold mb-4">3</div><div class="font-semibold">ArchViVo Layer</div></div>
+                <div><div class="mx-auto w-12 h-12 flex items-center justify-center border border-[#F0A83C] bg-[#F0A83C] rounded-2xl text-xl font-semibold mb-4">4</div><div class="font-semibold text-[#F0A83C]">Market-Ready</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Use Cases -->
+    <div id="usecases" class="max-w-6xl mx-auto px-8 pb-20">
+        <div class="section-label mb-4">USE CASE CARDS</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="usecase-cards"></div>
+    </div>
+
+    <!-- Decision Helper -->
+    <div id="decision" class="max-w-4xl mx-auto px-8 pb-24">
+        <div class="section-label mb-4">INTERACTIVE DECISION HELPER</div>
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-10">
+            <div class="text-xl mb-6">Answer this question to get a recommendation:</div>
+            <div class="space-y-3">
+                <button onclick="showRecommendation('internal')" class="w-full text-left p-4 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10">Do you have an internal team that wants to handle visualization themselves?</button>
+                <button onclick="showRecommendation('full')" class="w-full text-left p-4 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/10">Do you want one team to handle everything end-to-end?</button>
+            </div>
+            <div id="recommendation-result" class="mt-6 p-6 rounded-2xl hidden"></div>
+        </div>
+    </div>
+
+    <footer class="border-t border-white/10 py-12 text-xs text-center text-white/40">
+        ArchViVo × Vizma Design — Interactive Sales Enablement Website
+    </footer>
+
+<script>
+// Tailwind script
+function initTailwind() {
+    document.documentElement.style.setProperty('--accent', '#2E5B8C');
+}
+
+// Customer Type Cards
+const customerTypes = [
+    { name: "Architect / Designer", rec: "Vizma", color: "emerald" },
+    { name: "In-house Visualization Team", rec: "Vizma", color: "emerald" },
+    { name: "Developer / Builder", rec: "ArchViVo", color: "amber" },
+    { name: "Broker / Leasing Team", rec: "ArchViVo", color: "amber" },
+    { name: "Investor / Owner", rec: "ArchViVo", color: "amber" },
+    { name: "Small / Mid-size Developer", rec: "ArchViVo", color: "amber" }
+];
+
+function renderCustomerCards() {
+    const container = document.getElementById('customer-cards');
+    container.innerHTML = '';
+    customerTypes.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = `customer-card bg-white/5 border border-white/10 p-6 rounded-3xl ${item.rec === 'Vizma' ? 'vizma' : 'archvivo'}`;
+        div.innerHTML = `
+            <div class="font-semibold">${item.name}</div>
+            <div class="${item.color === 'emerald' ? 'text-emerald-400' : 'text-amber-400'} text-sm mt-1">${item.rec}</div>
+        `;
+        div.onclick = () => highlightRecommendation(div, item.rec);
+        container.appendChild(div);
+    });
+}
+
+function highlightRecommendation(element, rec) {
+    // Reset all
+    document.querySelectorAll('.customer-card').forEach(el => {
+        el.classList.remove('!border-emerald-400', '!border-amber-400', '!bg-white/10');
+    });
+    
+    if (rec === 'Vizma') {
+        element.classList.add('!border-emerald-400', '!bg-white/10');
+    } else {
+        element.classList.add('!border-amber-400', '!bg-white/10');
+    }
+    
+    // Show toast
+    const toast = document.createElement('div');
+    toast.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 bg-white text-zinc-950 px-5 py-3 rounded-2xl text-sm shadow-xl';
+    toast.innerHTML = `Recommended: <strong>${rec}</strong>`;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 1800);
+}
+
+// Use Case Cards
+const useCases = [
+    { title: "Fast Design Iterations", rec: "Vizma" },
+    { title: "Internal Visualization Team Support", rec: "Vizma" },
+    { title: "Full Pre-Construction Marketing Package", rec: "ArchViVo" },
+    { title: "Buyer & Investor Presentations", rec: "ArchViVo" },
+    { title: "Leasing & Tenant Marketing", rec: "ArchViVo" },
+    { title: "Competitive Sales Advantage", rec: "ArchViVo" },
+    { title: "Website & Digital Presence", rec: "ArchViVo" },
+    { title: "Motion & Marketing Assets", rec: "Vizma + ArchViVo" }
+];
+
+function renderUseCaseCards() {
+    const container = document.getElementById('usecase-cards');
+    container.innerHTML = '';
+    useCases.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'bg-white/5 border border-white/10 p-5 rounded-2xl flex justify-between items-center';
+        div.innerHTML = `
+            <div>
+                <div class="font-medium">${item.title}</div>
+            </div>
+            <div class="${item.rec.includes('Vizma') ? 'text-emerald-400' : 'text-amber-400'} text-sm font-semibold">${item.rec}</div>
+        `;
+        container.appendChild(div);
+    });
+}
+
+// Decision Helper
+function showRecommendation(type) {
+    const result = document.getElementById('recommendation-result');
+    result.classList.remove('hidden');
+    
+    if (type === 'internal') {
+        result.innerHTML = `
+            <div class="text-emerald-400 font-semibold mb-2">RECOMMENDATION: VIZMA DESIGN</div>
+            <div class="text-white/80">Perfect for teams that want speed and control over visualization.</div>
+        `;
+        result.className = 'mt-6 p-6 rounded-2xl bg-emerald-400/10 border border-emerald-400/30';
+    } else {
+        result.innerHTML = `
+            <div class="text-amber-400 font-semibold mb-2">RECOMMENDATION: ARCHVIVO</div>
+            <div class="text-white/80">Best when you want one team to handle strategy, execution, and delivery end-to-end.</div>
+        `;
+        result.className = 'mt-6 p-6 rounded-2xl bg-amber-400/10 border border-amber-400/30';
+    }
+}
+
+// Copy function
+function copyMatrixLine() {
+    const text = "Vizma = The visualization engine • ArchViVo = The complete team-managed solution";
+    navigator.clipboard.writeText(text).then(() => {
+        const btns = document.querySelectorAll('button');
+        btns.forEach(b => {
+            if (b.textContent.includes('Copy')) {
+                const original = b.textContent;
+                b.textContent = 'Copied!';
+                setTimeout(() => b.textContent = original, 1500);
+            }
+        });
+    });
+}
+
+// Initialize everything
+function init() {
+    initTailwind();
+    renderCustomerCards();
+    renderUseCaseCards();
+    
+    // Add some default highlights
+    console.log('%c[ArchViVo × Vizma] Interactive website initialized.', 'color:#666');
+}
+
+window.onload = init;
+</script>
+</body>
+</html>
